@@ -123,7 +123,7 @@ float: left;
     border-radius: 5px;
     border-color: #e9e65a;}
 
-button {
+.button {
     float: left; 
    background-color: aliceblue; 
     color:#3b3c3d; 
@@ -141,18 +141,12 @@ button {
     font-family: fira-sans, sans-serif;
     font-weight: 300;
     font-style:normal;
-    text-decoration-line: none;}
+    text-decoration-line: none !important;}
 
-button:hover{ background-color: #4d7fb4; color:#fffdfa; border: 1px solid navy;}
+.button:hover{ background-color: #4d7fb4; color:#fffdfa; border: 1px solid navy;text-decoration-line: none!important;}
 
-button:visited{text-decoration-line: none; background-color: aliceblue; color:#3b3c3d; border: 1px solid #4d7fb4;}
+.button:visited{text-decoration-line: none!important; background-color: aliceblue; color:#3b3c3d; border: 1px solid #4d7fb4;}
     
-
-
-
-
-
-
 
 .button1 {
     float: left;
@@ -174,8 +168,6 @@ background-color: aliceblue; color:#3b3c3d; border: 1px solid #4d7fb4;
 .button1:hover{background-color: lightyellow; color:goldenrod; border: 1px solid khaki;}
 
 .button1:visited{text-decoration-line: none; background-color: aliceblue; color:#3b3c3d; border: 1px solid #4d7fb4;}
-
-
 
 
 
