@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jillian Parker Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif; padding-left: 0; margin-left: 0;}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar black card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="bar-item button padding-large"><img src="images/logo-purple.png" style="width: 50px;"></a>
+    <a href="ex.html" class="bar-item button padding-large hide-small">Exhibition Design</a>
+    <a href="motion.html" class="bar-item button padding-large hide-small">Motion</a>
+    <a href="ad.html" class="bar-item button padding-large hide-small">Advertising</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+  <a href="index.html" class="bar-item button padding-large" onclick="myFunction()">Home</a>
+  <a href="motion.html" class="bar-item button padding-large" onclick="myFunction()">Motion</a>
+  <a href="ad.html" class="bar-item button padding-large" onclick="myFunction()">Advertising</a>
+  <a href="ex.html" class="bar-item button padding-large" onclick="myFunction()">Exhibitions</a>
+</div>
+
+<!-- Page content -->
+<div class="content" style="max-width:2000px;margin-top:46px">
+    
+<!-- Automatic Slideshow Images -->
+   <div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/yaf-title.jpg" style="height:400px">
+  </div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/yafcard.jpg" style="height:400px">
+  </div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/facultycard.jpg" style="height:400px">
+  </div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/faculty2.jpg" style="height:400px">
+  </div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/swuciapparel.jpg" style="height:400px">
+  </div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/banner.jpg" style="height:400px">
+  </div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/synthcard.jpg" style="height:400px">
+  </div>
+    <div class="mySlides display-container center" style="margin-top: 50px; padding-top: 50px;">
+    <img src="images/synth2.jpg" style="height:400px">
+  </div>
+</div>
+    
+<!-- The Info Section -->
+<div class="container content center" style="max-width:800px;  padding-top:64px;">
+    <h2>Who is Jillian?</h2>
+    <p class="opacity"><i>I have been studying graphic design at The University of West Florida for three years now. In preparing for my BFA graduation in December 2022, I have compiled this digital portfolio in web form.</i></p>
+    <p class="justify"> I have enjoyed creating art my whole life, no matter the media. In my personal work, I love incorporating fun new colors into designs and illustrations. My favorite art style is mid-century modern, but I am always drawn back to the use of color in fauvist art. In my internship with UWF’s 2022 TAG Student Designs Team, I have been able to work on refining my skills by designing exhibition identities and campaigns with clients like the Pensacola Museum of Art, Pensacola’s Historic Trust, and The University of West Florida’s Art Gallery. Currently, my favorite design program is Adobe Illustrator, and the newest program I’m learning is Adobe Animate.</p>
+  </div>
+
+
+  <!-- The Contact Section -->
+<div class="padding-64">
+  <div class="black" style="position:absolute; left:0px; right:0px;">
+    <div class="container content padding-24" style="max-width:800px;">
+    <h2 class="wide center">CONTACT</h2>
+    <p class="opacity center"><i>Fan? Drop a note!</i></p>
+        <div class="row padding-16">
+        <div class="center large">
+            <i class="fa fa-map-marker" style="width:30px"></i> Pensacola, FL<br>
+            <i class="fa fa-envelope" style="width:30px"></i> jillianparker.design@gmail.com<br>
+            <i class="fa fa-linkedin" style="width:30px"></i> www.linkedin.com/in/jparkerdesign<br>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<!-- End Page Content -->
+</div>
+
+
+<script>
+    
+//Automatic Slideshow - change image every 1.5 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 1500);    
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  } else { 
+    x.className = x.className.replace(" show", "");
+  }
+}
+
+</script>
+
+</body>
+</html>
