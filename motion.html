@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jillian Parker Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif; padding-left: 0; margin-left: 0;}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar black card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="bar-item button padding-large"><img src="images/logo-purple.png" style="width: 50px;"></a>
+    <a href="ex.html" class="bar-item button padding-large hide-small">Exhibition Design</a>
+    <a href="motion.html" class="bar-item button padding-large hide-small">Motion</a>
+    <a href="ad.html" class="bar-item button padding-large hide-small">Advertising</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+  <a href="index.html" class="bar-item button padding-large" onclick="myFunction()">Home</a>
+  <a href="motion.html" class="bar-item button padding-large" onclick="myFunction()">Motion</a>
+  <a href="ad.html" class="bar-item button padding-large" onclick="myFunction()">Advertising</a>
+  <a href="ex.html" class="bar-item button padding-large" onclick="myFunction()">Exhibitions</a>
+</div>
+
+<!-- Page content -->
+<div class="content" style="max-width:2000px;margin-top:46px">
+    
+    <!-- The Info Section -->
+  <div class="container content center" style="max-width:800px;  padding-top:24px;">
+        <h2>68th Annual Youth Art Focus</h2>
+        <div class="display-container center">
+        <video width="100%" height="auto" autoplay controls loop>
+            <source src="images/yafmotion.mp4" type="video/mp4">
+            </video>
+        </div>
+    <p class="opacity"><i>During my internship, I also worked with the Pensacola Museum of Art. The PMA holds an annual art show to introduce the K-12 art students in Escambia county to the Pensacola art community. The title wall was a physical installation, but the museum wanted to have a projected motion graphic on the museum exterior to help attract visitors.</i></p>
+  </div>
+    
+    <div class="container content center" style="max-width:800px;  padding-top:24px;">
+        <h2>Hammerhead Character Walk Animation</h2>
+        <div class="display-container center">
+        <video width="100%" height="auto" autoplay controls loop>
+            <source src="images/hammerhead.mp4" type="video/mp4">
+            </video>
+        </div>
+    <p class="opacity"><i>During an animation course I took, I was assigned a character walk and morphing animation for one of the course projects. It was very interesting to learn about the framework that helps a walk cycle look smooth and like actual walking. I also studied frame-by-frame shape morph and how to draw them by hand as well as using automated morphs from Adobe Animate.</i></p>
+  </div> 
+
+<div class="container content center" style="max-width:800px;  padding-top:24px;">
+        <h2>Giving and Taking Tree</h2>
+        <div class="display-container center">
+            <img src="images/tree.gif" style="width:100%">
+        </div>
+    <p class="opacity"><i>This tree animation is another project from my animation course in college. The only intructions were to show a timelapse of a tree growing in a unique way. I thought of how a tree grows normally and I really wanted to take the concept of trees growing vertically in a new direction . . . like down and out.</i></p>
+  </div>
+    
+    <div class="container content center" style="max-width:800px;  padding-top:24px;">
+        <h2>BFA Exit Show Title Wall - Fall 2021</h2>
+        <div class="display-container center">
+        <video width="100%" height="auto" autoplay controls loop>
+            <source src="images/fallsynth.mp4" type="video/mp4">
+            </video>
+        </div>
+    <p class="opacity"><i>The Fall BFA Exit Show at the University of West Florida was the second exhbition identity that I designed during my internship with the campus art gallery. The title wall was a motion graphic of the exhibition name 'Synthesis' and I created it using Adobe After Effects.</i></p>
+  </div>
+    
+    <div class="container content center" style="max-width:800px;  padding-top:24px;">
+        <h2>The MIRA Home Accessories Brand</h2>
+        <div class="display-container center">
+        <video width="100%" height="auto" autoplay controls loop>
+            <source src="images/mira.mp4" type="video/mp4">
+            </video>
+        </div>
+    <p class="opacity"><i>Mira is a conceptual brand  that I created based on the idea of a homegoods supplier who catered toward the gothic fairytale style of interior design. I designed the brand identity, <a href="https://jip106.wixsite.com/mira-on-the-wall" target="_blank" style="text-decoration: none; color: darkgoldenrod">a retail website</a>, and I used 3D software to render possible products to sell on their site. I also used Adobe After Effects to create a motion graphic for the website. </i></p>
+  </div>  
+    
+    
+  <!-- The Contact Section -->
+  <div class="black" id="contact">
+    <div class="container content padding-64" style="max-width:800px">
+    <h2 class="wide center">CONTACT</h2>
+    <p class="opacity center"><i>Fan? Drop a note!</i></p>
+        <div class="row padding-16">
+        <div class="center large">
+            <i class="fa fa-map-marker" style="width:30px"></i> Pensacola, FL<br>
+            <i class="fa fa-envelope" style="width:30px"></i> jillianparker.design@gmail.com<br>
+            <i class="fa fa-linkedin" style="width:30px"></i> www.linkedin.com/in/jparkerdesign<br>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+<!-- End Page Content -->
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  } else { 
+    x.className = x.className.replace(" show", "");
+  }
+}
+</script>
+
+</body>
+</html>

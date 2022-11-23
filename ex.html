@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jillian Parker Design</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {font-family: "Lato", sans-serif; padding-left: 0; margin-left: 0;}
+.mySlides {display: none}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="top">
+  <div class="bar black card">
+    <a class="bar-item button padding-large hide-medium hide-large right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="bar-item button padding-large"><img src="images/logo-purple.png" style="width: 50px;"></a>
+    <a href="ex.html" class="bar-item button padding-large hide-small">Exhibition Design</a>
+    <a href="motion.html" class="bar-item button padding-large hide-small">Motion</a>
+    <a href="ad.html" class="bar-item button padding-large hide-small">Advertising</a>
+  </div>
+</div>
+
+<!-- Navbar on small screens -->
+<div id="navDemo" class="bar-block black hide hide-large hide-medium top" style="margin-top:46px">
+  <a href="index.html" class="bar-item button padding-large" onclick="myFunction()">Home</a>
+  <a href="motion.html" class="bar-item button padding-large" onclick="myFunction()">Motion</a>
+  <a href="ad.html" class="bar-item button padding-large" onclick="myFunction()">Advertising</a>
+  <a href="ex.html" class="bar-item button padding-large" onclick="myFunction()">Exhibitions</a>
+</div>
+
+    <!-- Page content -->
+<div class="content" style="max-width:2000px;margin-top:46px">
+    
+  <!-- The Info Section -->
+
+       <div class="container content center" style="max-width:800px;  padding-top:24px;">
+    <h2>68th Annual Youth Art Focus</h2>
+        <div class="display-container center">
+        <img src="images/yafset.jpg" style="width: 100%">
+        </div>
+    <p class="opacity"><i>During my internship, I also worked with the Pensacola Museum of Art. The PMA holds an annual art show to introduce the K-12 art students in Escambia county to the Pensacola art community. I was incharge of the title wall design and installation, the postcard design, as well as the award certificate and button designs.</i></p>
+  </div>
+    
+    <div class="container content center" style="max-width:800px;  padding-top:24px;">
+    <h2>BFA Exit Show - Spring 2022</h2>
+        <div class="display-container center">
+        <img src="images/synthset.jpg" style="width: 100%">
+        </div>
+    <p class="opacity"><i>In my internship, I also designed the exhibition identity for the Spring 2022 BFA Exit Show. The main characteristic of the identity is a three tone gradient. The show is exhibited in two locations: half in the UWF gallery and half in the PMA gallery. The title walls for both locations only used 2 gradient tones so that it would be a continuation across locations. I allude to this in the information details on the poster.</i></p>
+  </div>
+ 
+    <div class="container content center" style="max-width:800px;  padding-top:24px;">
+    <h2>BFA Exit Show Postcard - Fall 2021</h2>
+        <div class="display-container center">
+        <img src="images/fallsynthcard.jpg" style="width: 100%">
+        </div>
+    <p class="opacity"><i>The Fall BFA Exit Show at the University of West Florida was the second exhbition identity that I designed during my internship with the campus art gallery. The title wall was a motion graphic of the exhibition name 'Synthesis' and I echoed the vertical movement of the letters with gradient stripes in the postcard. </i></p>
+  </div>
+    
+<div class="container content center" style="max-width:800px;  padding-top:24px;">
+    <h2>In Place: Faculty Exhibition</h2>
+        <div class="display-container center">
+        <img src="images/faculty.jpg" style="width: 100%">
+        </div>
+    <p class="opacity"><i>In Place was the first exhibition held at the University of West Florida after the reopening post-coronavirus. In my internship with the gallery, I was selected to create the exhibition title and design. I titled the show 'In Place' to spark conversation of what 'working in place' meant to artists during covid.</i></p>
+  </div>
+    
+  <div class="container content center" style="max-width:800px;  padding-top:24px;">
+    <h2>Coastal Art Museum of St. Augustine</h2>
+        <div class="display-container center">
+        <img src="images/camsa.jpg" style="width: 100%">
+        </div>
+    <p class="opacity"><i>CAMSA is a fictional museum I designed a brand identity for. To showcase the branding, I also designed an opening exhibition concept for the CAMSA gallery. To show how the branding would be used inside the museum, I designed wayfinding signage and gift shop merchandise. </i></p>
+  </div>
+    
+    
+  <!-- The Contact Section -->
+  <div class="black" id="contact">
+    <div class="container content padding-64" style="max-width:800px">
+    <h2 class="wide center">CONTACT</h2>
+    <p class="opacity center"><i>Fan? Drop a note!</i></p>
+        <div class="row padding-16">
+        <div class="center large">
+            <i class="fa fa-map-marker" style="width:30px"></i> Pensacola, FL<br>
+            <i class="fa fa-envelope" style="width:30px"></i> jillianparker.design@gmail.com<br>
+            <i class="fa fa-linkedin" style="width:30px"></i> www.linkedin.com/in/jparkerdesign<br>
+        </div>
+        </div>
+      </div>
+    </div>
+  
+<!-- End Page Content -->
+</div>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("show") == -1) {
+    x.className += " show";
+  } else { 
+    x.className = x.className.replace(" show", "");
+  }
+}
+</script>
+
+</body>
+</html>
